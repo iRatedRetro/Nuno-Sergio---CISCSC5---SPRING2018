@@ -34,8 +34,8 @@ int main(int argc, char** argv) {
     //Declare Variables
     int games,//Number of games being played
         numPlay,//Number of Players
-        winner=0,//Winner of the game
-        loser=0,//Who lost the game
+        winner,//Winner of the game
+        loser,//Who lost the game
         numLife;//Number of lives/person
     int die1,die2,sum1,sum2,sum3,sum4,sum5,sum6,sum7,sum8,sum9; 
     int p1,p2,p3,p4,p5,p6,p7,p8,p9;//players in the game
@@ -49,7 +49,7 @@ int main(int argc, char** argv) {
         lives8=6,
         lives9=6;
     
-    cout<<"How many players are there from 2 to 9?\n";
+    cout<<"How many players are there from 2 to 10?\n";
     cin>>numPlay;
     
     do{
@@ -57,19 +57,43 @@ int main(int argc, char** argv) {
             int die1={rand()%6+1};  //[1,6]
              int die2={rand()%6+1};  //[1,6]
              int sum1=die1+die2;
-             p1=sum1;{
-             int die1={rand()%6+1};  //[1,6]
-             int die2={rand()%6+1};  //[1,6]
+             p1=sum1;
+             die1={rand()%6+1};  //[1,6]
+             die2={rand()%6+1};  //[1,6]
              int sum2=die1+die2;
-             p2=sum2;}
-                      }
-    if(p1>p2){
-        lives2--;
-    }else{
-        lives1--;
-             }
-    }while(lives1<=0 || lives2<=0);
+             p2=sum2;
+        }
+        
+        if(p1>p2){
+            lives2--;
+        }else{
+            lives1--;
+        }
+    }while(lives1>0 && lives2>0);
     
+    
+    do{
+        if(numPlay==3){
+            int die1={rand()%6+1};  //[1,6]
+             int die2={rand()%6+1};  //[1,6]
+             int sum1=die1+die2;
+             p1=sum1;
+             die1={rand()%6+1};  //[1,6]
+             die2={rand()%6+1};  //[1,6]
+             int sum2=die1+die2;
+             p2=sum2;
+             die1={rand()%6+1};  //[1,6]
+             die2={rand()%6+1};  //[1,6]
+             int sum3=die1+die2;
+             p3=sum3;
+        }
+        
+        if(p1>p2){
+            lives2--;
+        }else{
+            lives1--;
+        }
+    }while(lives1>0 && lives2>0);
     
     //Initialize
     
