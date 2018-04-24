@@ -29,16 +29,16 @@ int main(int argc, char** argv) {
     //Display Player count
     string prompt("How many players are there from 2 to 6?  ");
     cout<<prompt;
-        
+    
         cin>>players;
-
+        
         //Process/Map inputs to outputs
 if(players>='2'&&players<='6'){
     switch(players){
     case '2':{
             int numPlay=2;//Number of Players
             int die1,die2,sum1,sum2;
-            int p1,p2;
+            int p1,p2,p1win,p2win;
             float lives1=6,//Number of lives/person
                   lives2=6;
             //Dice roll per player
@@ -65,10 +65,15 @@ if(players>='2'&&players<='6'){
             cout<<"Player 2 Loses"<<endl;
             }else{
             cout<<"Player 1 Loses"<<endl;
-            }
+            }if(numPlay=2){
             //Output of how many lives each player has left    
             cout<<"Player One has "<<lives1<<" lives left.\n"<<"Player Two "
                     "has "<<lives2<<" lives left.\n"<<endl;
+            }
+            if (lives1>lives2)
+                p1win++;
+            if (lives2>lives1)
+                p2win++;
             break;
     }
     //01234567890123456789012345678901234567890123456789012345678901234567890123
