@@ -1,0 +1,4 @@
+Here are the results of your most recent game of blackjack:
+You played 1 rounds.
+You won 0 of them and lost 1 of them.
+Your overall win ratio is 0 percent.

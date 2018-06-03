@@ -1,0 +1,4 @@
+Here are the results of your most recent game of blackjack:
+You played 17 rounds.
+You won 1 of them and lost 16 of them.
+Your overall win ratio is 5.882 percent.

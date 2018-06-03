@@ -1,42 +1,38 @@
 /* 
  * File:   main.cpp
- * Author: Sergio Nuno
- * Created on March 15, 2018, 11:00 AM
- * Purpose:  CPP Template
- *           To be copied for each project
+ * Author: Dr Mark E. Lehr
+ * Created on April 19th, 2018, 11:30 AM
+ * Purpose:  Calculate a Factorial
  */
+
 //System Libraries
-#include <iostream>//I/O Library -> cout,endl
-using namespace std;//namespace I/O stream library created
+#include <iostream>
+using namespace std;
 
 //User Libraries
 
-
-//Global Constants
-
-
-//Math, Physics, Science, Conversions, 2-D Array Columns
-
+//Global Constants - Math/Physics Constants, Conversions,
+//                   2-D Array Dimensions
 
 //Function Prototypes
 
-
-//Execution Begins Here!
+//Execution Begins Here
 int main(int argc, char** argv) {
     //Declare Variables
-    int n,fctr1;
+    int n,fctrl;
     
-    //Initial Variables
-    fctr1=1;
+    //Initialize Variables
+    fctrl=1;
     n=6;
-    //Map/Process Input to Outputs
+    
+    //Process/Map inputs to outputs
     for(int i=1;i<=n;i++){
-        fctr1*=i;
+        fctrl*=i;
     }
     
-    //Display outputs
-    cout<<n<<"! = "<<fctr1<<endl;
+    //Output data
+    cout<<n<<"! = "<<fctrl<<endl;
     
-    //Exit program!
+    //Exit stage right!
     return 0;
 }

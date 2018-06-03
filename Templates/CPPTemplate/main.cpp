@@ -1,29 +1,24 @@
 /* 
  * File:   main.cpp
  * Author: Sergio Nuno
- * Created on March 15, 2018, 11:00 AM
- * Purpose:  CPP Template
- *           To be copied for each project
+ * Created on DATE AND TIME HERE
+ * Purpose:  ISP charges
  */
-//System Libraries
-#include <iostream>//I/O Library -> cout,endl
-using namespace std;//namespace I/O stream library created
 
-//User Libraries
+//System Libraries Here
+#include <iostream>
+using namespace std;
 
+//User Libraries Here
 
-//Global Constants
+//Global Constants Only, No Global Variables
+//Like PI, e, Gravity, or conversions
 
+//Function Prototypes Here
 
-//Math, Physics, Science, Conversions, 2-D Array Columns
-
-
-//Function Prototypes
-
-
-//Execution Begins Here!
+//Program Execution Begins Here
 int main(int argc, char** argv) {
-    //Declare Variables
+    //Declare all Variables Here
     
     
     //Initial Variables
